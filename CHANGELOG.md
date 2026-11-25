@@ -4,6 +4,11 @@ All notable changes to `@sting8k/pi-vcc` are documented in this file.
 
 ## [Unreleased]
 
+- Omit exact Goal-generated scheduling-only user messages from summary content.
+  Matching goal ID/iteration and a UUID continuation marker are required. Mixed
+  genuine user text remains intact, and original user-turn cut boundaries remain
+  unchanged. Existing persisted summaries are not retroactively rewritten.
+
 ## [0.12.1]
 
 ### Fixes
